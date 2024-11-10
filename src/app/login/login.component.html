@@ -1,0 +1,54 @@
+<div class="h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('/assets/edvin-johansson-rlwE8f8anOc-unsplash.jpg');">
+    <div class="max-w-lg w-full bg-white bg-opacity-90 p-8 shadow-2xl rounded-lg">
+      <form (submit)="onSubmit()" class="space-y-6">
+        <h1 class="text-3xl font-bold text-center text-gray-800 mb-6">RoomSearch.com</h1>
+  
+        <div>
+          <label for="username" class="block text-lg font-medium text-gray-700">Username Or Email</label>
+          <input 
+            type="text" 
+            id="username" 
+            class="mt-2 block w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            [(ngModel)]="username" 
+            name="username" 
+            required 
+            placeholder="Enter your username or email"
+          >
+        </div>
+  
+        <div>
+          <label for="password" class="block text-lg font-medium text-gray-700">Password</label>
+          <input 
+            type="password" 
+            id="password" 
+            class="mt-2 block w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            [(ngModel)]="password" 
+            name="password" 
+            required 
+            placeholder="Enter your password"
+          >
+        </div>
+  
+        <div class="text-right">
+          <a href="/index.html" class="text-blue-500 hover:text-blue-600 text-sm">Forgot Password?</a>
+        </div>
+  
+        <div class="flex justify-between space-x-4">
+          <button 
+            type="submit" 
+            class="w-full bg-blue-600 text-white font-semibold py-3 rounded-md hover:bg-blue-700 transition duration-200"
+          >
+            Sign Up
+          </button>
+          <button 
+            type="button" 
+            class="w-full bg-blue-600 text-white font-semibold py-3 rounded-md hover:bg-blue-700 transition duration-200"
+            (click)="change()"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  

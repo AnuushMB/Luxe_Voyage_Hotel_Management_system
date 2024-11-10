@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+body {
+    scroll-behavior: smooth;
+    font-family: 'Lobster', cursive;
+  } 
+
+.card{
+    border-radius: 35px;
+    padding: 10px;
+    border-width: 2px;
+}
+.limited{
+    font-weight: 100px;
+    background-color: lightgreen;
+    color: green;
+    padding: 3px;
+}
+#scales{
+    display:inline
+}
+
+#price
+{
+    color: lightgreen;
+}
+
+.hotelimg
+{
+    box-sizing: border-box;
+    height: 200px;
+    margin: 10px;
+}
+
+#bookBtn
+{
+    box-sizing: border-box;
+    width: 50%;
+    margin-left: 50%;
+    padding: 5px;
+    border-radius: 5px;
+}
+h2,h3{
+    text-align: center;
+}
+ul li{
+    list-style-type: none;
+
+}
+.selection li{
+    display: block;
+}
+input[type="radio"] {
+    -webkit-appearance: checkbox;
+}
+.card h2{
+    text-align: start;
+}
